@@ -54,25 +54,49 @@
         - "Нарушения" и "Нарушения водителя": Связь ноль-ко-многим (один нарушение может быть не связан или связан с несколькими нарушениями водителя).
 
 ## Физическая модель
-  - ```make::varchar```
-  - ```seriesPassport::varchar```
-  - ```numberPassport::varchar```
-  - ```stateNumber::varchar```
-  - ```engineNumber::varchar```
-  - ```bodyNumber::varchar```
-  - ```dreverId::integer primery key```
-  - ```driverAdress::varchar```
-  - ```firstName::text```
-  - ```lastName::text```
-  - ```patronymic::text```
-  - ```address::text```
-  - ```seriesLicence::varchar```
-  - ```numberLicence::varchar```
-  - ```venicleId::integer primery key```
-  - ```violationId::integer primery key```
-  - ```name::text```
-    
+```sql
+CREATE TABLE driver (
+	driver_id SERIAL PRIMARY KEY,
+	firstName VARCHAR(20),
+	lastName VARCHAR(20),
+	patronymic VARCHAR(20),
+	address VARCHAR(60),
+	seriesLicence VARCHAR(10),
+	numberLicence VARCHAR(10)
+);
 
+CREATE TABLE vinecle (
+	venicle_id SERIAL PRIMARY KEY,
+	make VARCHAR(20),
+	seriesPassport VARCHAR(20),
+	numberPassport VARCHAR(20),
+	stateNumber VARCHAR(20),
+	engineNumber VARCHAR(40),
+	bodyNumber VARCHAR(20),
+	driver_id SERIAL,
+	FOREIGN KEY (driver_id) REFERENCES driver(driver_id),
+	driverAdress VARCHAR(60)
+);
+
+CREATE TABLE violation (
+	violation_id SERIAL PRIMARY KEY,
+	name TEXT NOT NULL
+);
+
+CREATE TABLE driver_violation (
+	driver_violation_id SERIAL PRIMARY KEY,
+	violation_id SERIAL NOT NULL,
+	FOREIGN KEY (violation_id) REFERENCES violation(violation_id),
+	venicle_id SERIAL NOT NULL,
+	FOREIGN KEY (venicle_id) REFERENCES vinecle(venicle_id),
+	driver_id SERIAL NOT NULL,
+	FOREIGN KEY (driver_id) REFERENCES driver(driver_id),
+	date DATE NOT NULL
+);
+```
+
+## DLL-запросы:
+    
 
     
 
