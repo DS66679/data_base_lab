@@ -8,7 +8,7 @@
 - Выдать список водителей, совершивших определенный вид нарушения на автомобилях определенной марки, отсортированный по ФИО водителей и номерам автомобилей.
 
 **Er-диаграмма**
-![](ГАИ.jpg)
+![](photos/ГАИ.jpg)
 
 # Лабораторная работа 2
 
@@ -96,7 +96,41 @@ CREATE TABLE driver_violation (
 ```
 
 ## DLL-запросы:
-    
+### Создание таблиц
+![](photos/createTables.jpg)
 
-    
+### Заполнение таблиц:
+**driver**
+![](photos/driver.jpg)
 
+**vinecle**
+![](photos/vinecle.jpg)
+
+**violation**
+<br>
+![](photos/violation.jpg)
+    
+**driver_violation**
+![](photos/driver_violation.jpg)
+
+### Проверка наличия таблиц:
+**driver**
+![](photos/driverSelect.jpg)
+
+**vinecle**
+![](photos/venicleSelect.jpg)
+
+**violation**
+<br>
+![](photos/violationSelect.png)
+    
+**driver_violation**
+<br>
+![](photos/driver_violationSelect.jpg)
+
+## SELECT-запросов:
+### Выдать список автомобилей с указанием количества нарушений за определенный интервал дат, отсортированный по маркам и ФИО владельцев:
+![](photos/firstRequest.jpg)
+
+### Выдать список водителей, совершивших определенный вид нарушения на автомобилях определенной марки, отсортированный по ФИО водителей и номерам автомобилей.:
+![](photos/secondRequest.jpg)
