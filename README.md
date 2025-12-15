@@ -155,11 +155,15 @@ CREATE TABLE driver_violation (
 ### Удаление водителя из базы данных
 ![](photos/procedure_remove_from_driver.jpg)
 
+![](photos/procedure_remove_from_driver_complete.jpg)
+### Варианты работ процедур при ELSE
+![](photos/procedure_add_remove_else.png)
+
 ## Представление сложных запросов при помощи представления:
 ![](photos/view1_optimization.jpg)
 ![](photos/view2_optimization.jpg)
 
-![](photos/procedure_remove_from_driver_complete.jpg)
-### Варианты работ процедур при ELSE
-![](photos/procedure_add_remove_else.png)
+# Лабораторная работа 4
+
+
 
