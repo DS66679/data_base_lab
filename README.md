@@ -169,3 +169,25 @@ CREATE TABLE driver_violation (
 ![](photos/generator_driver_call.jpg)
 ![](photos/generator_driver_complete.jpg)
 
+## Генератор venicle:
+![](photos/generator_venicle.jpg)
+![](photos/generator_venicle_call.jpg)
+![](photos/generator_venicle_complete.jpg)
+
+## Генератор violation:
+![](photos/generator_violation.jpg)
+![](photos/generator_violation_call.jpg)
+![](photos/generator_violation_complete.jpg)
+
+## Генератор driver_violation:
+![](photos/generator_driver_violation.jpg)
+![](photos/generator_driver_violation_call.jpg)
+![](photos/generator_driver_violation_complete.jpg)
+
+
+
+
+
+
+
+
