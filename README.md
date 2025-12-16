@@ -194,6 +194,34 @@ CREATE TABLE driver_violation (
 ![](photos/explain_after_optimization.jpg)
 
 # Лабораторная работа 5
+## Триггеры:
+### Функция-триггер удаления
+![](photos/trf_delete_violation.jpg)
+### Триггер при удаление в violation
+![](photos/trig_delete_violation.jpg)
+### До удаления
+![](photos/delete_violation_1.jpg)
+
+![](photos/delete_violation_2.jpg)
+
+### После удаления
+![](photos/delete_violation_3.jpg)
+
+![](photos/delete_violation_4.jpg)
+
+![](photos/delete_violation_5.jpg)
+
+## Таблица-аудита:
+### Создание таблицы-аудита на violation
+![](photos/table_audit_violation.jpg)
+
+### Функция-триггер добавления, изменения, удаления
+![](photos/IUDf_violation.jpg)
+### Триггер при добавлении, изменении, удалении в violation
+![](photos/trig_violation_audit.png)
+### Проверка таблицы-аудита
+![](photos/audit_works.jpg)
+
 
 
 
