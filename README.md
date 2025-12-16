@@ -164,6 +164,8 @@ CREATE TABLE driver_violation (
 ![](photos/view2_optimization.jpg)
 
 # Лабораторная работа 4
-
-
+## Генератор driver:
+![](photos/generator_driver.jpg)
+![](photos/generator_driver_call.jpg)
+![](photos/generator_driver_complete.jpg)
 
