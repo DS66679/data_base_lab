@@ -185,9 +185,15 @@ CREATE TABLE driver_violation (
 ![](photos/generator_driver_violation_complete.jpg)
 
 
+## Анализ планов выполнения запросов
+### Первый SELECT-запрос выходных данных (время выполнения 22ms)
+![](photos/explain_before_optimization.jpg)
+### Создание индексов для оптимизации
+![](photos/createIndexes.jpg)
+### SELECT-запрос после оптимизации (время выполнения 11ms)
+![](photos/explain_after_optimization.jpg)
 
-
-
+# Лабораторная работа 5
 
 
 
